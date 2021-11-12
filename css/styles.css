@@ -1,0 +1,206 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+}
+
+.header__logo {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.nav {
+    display: flex;
+    list-style: none;
+    background-color: #1B1B1B;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.nav__link {
+    text-transform: uppercase;
+    font-size: .9em;
+    display: inline-block;
+    padding: 9px 7px;
+}
+
+.nav__search {
+    position: relative;
+    right: -50px;
+    display: inline-block;
+    padding: 9px 7px;
+    /* transform: rotateX(90deg); */
+    transform: rotateY(180deg);
+}
+
+.la-search {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav__link::before {
+    content: "/";
+    margin-right: 5px;
+    
+}
+
+/* .main__animate {
+    background-image: url(../images/planete.jpeg);
+    background-position: center;
+    background-size: cover;
+} */
+
+.section__animate {
+    display: flex;
+    background-color: #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.section__animate__nav {
+    transform: translateX(-70px);
+    transition-duration: .6s;
+    padding: 5px;
+    /* display: none; */
+    background-color: white;
+    align-self: flex-start;
+    justify-items: flex-start;
+    z-index: 5;
+}
+
+.icone {
+    width: 50px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.section__images {
+    position: relative;
+    top: -100px;
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    color: #A7A7A7;
+    padding: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/* .section__images__article {
+    border-bottom: 1px solid #A7A7A7;
+} */
+
+.span {
+    color: #1E73BE;
+}
+
+.box1 {
+    width: 100%;
+    border-bottom: 2px solid #a7a7a7ad;
+    border-top: 2px solid #a7a7a7ad;
+    padding: 20px 0 50px 0;
+}
+
+.img1 {
+    width: 100%;
+    height: 300px;
+    
+}
+
+.box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img2, .img3, .img4, .img7, .img8, .img9, .img12, .img13, .img14 {
+    width: 33.333%;
+    padding: 2px;
+    height: 170px;
+}
+
+.img12, .img13, .img14 {
+    width: 33.333%;
+    padding: 2px;
+    height: 140px;
+}
+
+.img5, .img6, .img10, .img11, .img20, .img21 {
+    width: 50%;
+    height: 250px;
+    padding: 2px;
+}
+
+.img15, .img16 {
+    width: 50%;
+    height: 200px;
+    padding: 2px;
+}
+
+.img17, .img18 {
+    width: 30%;
+    height: 140px;
+    padding: 2px;
+}
+
+.img19 {
+    width: 40%;
+    height: 140px;
+    padding: 2px;
+}
+
+.buttons {
+    margin: 30px 5px 0 10px;
+}
+
+.button {
+    padding: 10px;
+    border: 4px solid #a7a7a7ad;
+    color: #52515170;
+}
+
+h4 {
+    border-bottom: 8px solid #a7a7a7ad;
+    text-transform: uppercase;
+    margin: 20px 0  5px 0;
+    padding-bottom: 10px;
+    color: #363636ad;
+}
+
+.section__header__animate {
+    background-image: url(../images/planete.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animateHeader 5s forwards;
+}
+
+@keyframes animateHeader {
+    from {
+        height: 300px;
+    }
+    to {
+        height: 790px;
+    }
+    
+}
+
+
