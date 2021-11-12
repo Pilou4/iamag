@@ -3,6 +3,7 @@ let section = document.querySelector('.section__animate');
 let main = document.querySelector('.main');
 let header = document.querySelector('.header');
 let nav = document.querySelector('.nav');
+let title = document.querySelector('.title');
 let logo = document.querySelector('.header__logo');
 let navLeft = document.querySelector('.section__animate__nav');
 
@@ -22,26 +23,34 @@ window.onscroll = function () {
 
 
 window.onload = setInterval(animate, 1500);
-window.onload = setInterval(navReseau, 5000);
+// window.onload = setInterval(animateTitle, 1500);
+window.onload = setInterval(navReseau, 6000);
+
+function sectionAnimate () {
+
+}
 
 function animate () {
     section.classList.add('section__header__animate');
+    // title.style.marginTop = '345px';
+    // title.animate([
+    //     { marginTop: '-300px' },
+    //     { marginTop: '300px' }
+    // ], {
+    //     duration: 1000,
+    // });
+    // title.marginTop = '300px'
+}
+
+function animateTitle () {
+    title.classList.remove('title');
+    title.classList.add('animation__title');
 }
 
 function navReseau () {
     navLeft.style.transform = "translateX(0px)";
+    navLeft.style.animationDuration = "5s";
     navLeft.style.position = "fixed";
-    // navLeft.setAttribute('transform','translateX(70px)');
-}
-// window.addEventListener("DOMContentLoaded", (event) => {
-//     setInterval(animate, 1500);
-//     // section.classList.add('section__header__animate');
-//     // main.classList.add('main__animate');
+    navLeft.style.top = "38%";
 
-//     // section.classList.add('section__header__animate ');
-//     // section.setAttribute('class', 'section__header__animate')
-//     // section.style.backgroundImage = "url('img_tree.png')"
-//     console.log("DOM entièrement chargé et analysé");
-//   });
-// window.onload = animate;
-// window.onload = setInterval(animate, 1500);
+}
